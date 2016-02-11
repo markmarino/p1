@@ -39,54 +39,51 @@
         <br>
         <div class="cheatsheet well well-lg">
             <h2 class="cheatsheet">My Cheat Sheet for Getting Project 1 Ready</h2>
-            <ul>
-
-                <h3 class="cheatsheet">Create a new remote repository on Github.com</h3>
-                <li>See instructions here:</li>
-                <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/05_Setup_a_repository.md" class="btn btn-info" role="button">05_Setup_a_repository.md</a>
-                <li>Github URL for new repository: <code>git@github.com:markmarino/p1.git</code></li>
-                <li>Initialize local repo:</li>
-                <li>In cmder:
-                    <ul>
-                        <li>$ <kbd>cd E:\MAMP\htdocs\p1</kbd></li>
-                        <li>$ <kbd>git init</kbd></li>
-                        <li>$ <kbd>git remote -v</kbd></li>
-                    </ul>
-                </li>
-                <li>Connect local repo to Github repo:</li>
-                <li>Use this command line in cmder: $ <kbd>git remote add origin git@github.com:markmarino/p1.git</kbd></li>
-                <h3 class="cheatsheet">Push up the first commit</h3>
-                <li>See instructions here:</li>
-                <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/06_Tracking_changes.md" class="btn btn-info" role="button">06_Tracking_changes.md</a>
-                <li>First, check status. In cmder: $ <kbd>git status</kbd></li>
-                <li>Now add the files to the repo. In cmder: $ <kbd>git add --all</kbd>
-                <li>Now commit the untracked file(s)</li>
-                <li>In cmder: $ <kbd>git commit -m "Initial project commit."</kbd></li>
-                <li>Finally, push the files to github. In cmder: $ <kbd>git push origin master</kbd></li>
-                <h3 class="cheatsheet">Clone repo on Digital Ocean Droplet</h3>
-                <li>See instructions here:</li>
-                <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/07_Deploy_to_Digital_Ocean.md" class="btn btn-info" role="button">07_Deploy_to_Digital_Ocean.md</a>
-                <li>If you're not logged into Digital Ocean already, fire up another cmder window and ssh into it: $ <kbd>ssh root@192.241.176.184</kbd></li>
-                <li>Go to the Droplet root: # <kbd>cd /var/www/html</kbd></li>
-                <li>Clone the P1 repository. In cmder: # <kbd>git clone git@github.com:markmarino/p1.git</kbd></li>
-                <h3 class="cheatsheet">View the live website on Droplet</h3>
-                <li>You can view the website at this URL: <a href="http://192.241.176.184/p1/">http://192.241.176.184/p1/</a></li>
+                <h3 class="cheatsheet">Created a new remote repository on Github.com</h3>
+                <p class="cheatsheet">See instructions here:</p>
+                <p class="cheatsheet"><a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/05_Setup_a_repository.md" class="btn btn-info" role="button">05_Setup_a_repository.md</a></p>
+                <p class="cheatsheet">Github URL for new repository: <code>git@github.com:markmarino/p1.git</code></p>
+                <p class="cheatsheet">Initialized local repo:</p>
+                <p class="cheatsheet">In cmder:</p>
+                <ul>
+                    <li>$ <kbd>cd E:\MAMP\htdocs\p1</kbd></li>
+                    <li>$ <kbd>git init</kbd></li>
+                    <li>$ <kbd>git remote -v</kbd></li>
+                </ul>
+                <p class="cheatsheet">Connected local repo to Github repo:</p>
+                <p class="cheatsheet">Used this command line in cmder: $ <kbd>git remote add origin git@github.com:markmarino/p1.git</kbd></p>
+                <h3 class="cheatsheet">Pushed up the first commit</h3>
+                <p class="cheatsheet">See instructions here:</p>
+                <p class="cheatsheet"><a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/06_Tracking_changes.md" class="btn btn-info" role="button">06_Tracking_changes.md</a></p>
+                <p class="cheatsheet">First, checked status. In cmder: $ <kbd>git status</kbd></p>
+                <p class="cheatsheet">Then added the files to the repo. In cmder: $ <kbd>git add --all</kbd>
+                <p class="cheatsheet">Then committed the untracked file(s)</p>
+                <p class="cheatsheet">In cmder: $ <kbd>git commit -m "Initial project commit."</kbd></p>
+                <p class="cheatsheet">Finally, pushed the files to github. In cmder: $ <kbd>git push origin master</kbd></p>
+                <h3 class="cheatsheet">Cloned repo on Digital Ocean Droplet</h3>
+                <p class="cheatsheet">See instructions here:</p>
+                <p class="cheatsheet"><a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/07_Deploy_to_Digital_Ocean.md" class="btn btn-info" role="button">07_Deploy_to_Digital_Ocean.md</a><p class="cheatsheet">
+                <p class="cheatsheet">If you're not logged into Digital Ocean already, fire up another cmder window and ssh into it: $ <kbd>ssh root@192.241.176.184</kbd></p>
+                <p class="cheatsheet">CD to the Droplet root: # <kbd>cd /var/www/html</kbd></p>
+                <p class="cheatsheet">Cloned the P1 repository. In cmder: # <kbd>git clone git@github.com:markmarino/p1.git</kbd></p>
+                <h3 class="cheatsheet">Viewed the live website on Droplet</h3>
+                <p class="cheatsheet">You can view the website at this URL: <a href="http://192.241.176.184/p1/">http://192.241.176.184/p1/</a></p>
                 <h3 class="cheatsheet">Wash, Rinse, Repeat</h3>
-                <li>Now to make further updates, do these steps on the local server to update the files on github:</li>
+                <p class="cheatsheet">Now to make further updates, do these steps on the local server to update the files on github:</p>
                 <ul>
                     <li>$ <kbd>git add --all</kbd></li>
                     <li>$ <kbd>git commit -m "Add comment here."</kbd></li>
                     <li>$ <kbd>git push origin master</kbd></li>
                 </ul>
-                <li>And then in the Droplet cmder window, pull the files:</li>
-                <li># <kbd>git pull origin master</kbd></li>
+                <p class="cheatsheet">And then in the Droplet cmder window, pull the files:</p>
+                <p class="cheatsheet"># <kbd>git pull origin master</kbd></p>
                 <h3 class="cheatsheet">Setup the FQDNs for the Projects</h3>
-                <li>See instructions here:</li>
-                <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/08_Live_domain_setup.md" class="btn btn-info" role="button">08_Live_domain_setup.md</a>
-                <li>First, On Namecheap, I added DNS <code>A record</code> for <code>p1.markmarinorocks.me</code></li>
-                <li>I also added A records for p2,p3,p4</li>
-                <li>Now add the Virtual Host on my droplet so we can access the project by the FQDN <code>p1.markmarinorocks.me</code></li>
-                <li>In order to do that, I added the following code to the <code>/etc/apache2/sites-enabled/000-default.conf</code> file.</li>
+                <p class="cheatsheet">See instructions here:</p>
+                <p class="cheatsheet"><a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/08_Live_domain_setup.md" class="btn btn-info" role="button">08_Live_domain_setup.md</a></p>
+                <p class="cheatsheet">First, On Namecheap, I added DNS <code>A record</code> for <code>p1.markmarinorocks.me</code></p>
+                <p class="cheatsheet">I also added A records for p2,p3,p4</p>
+                <p class="cheatsheet">Then added the Virtual Host on my droplet so we can access the project by the FQDN <code>p1.markmarinorocks.me</code></p>
+                <p class="cheatsheet">In order to do that, I added the following code to the <code>/etc/apache2/sites-enabled/000-default.conf</code> file.</p>
                 <pre>
 &lt;VirtualHost *:80&gt;
     ServerName p1.markmarinorocks.me
@@ -95,9 +92,9 @@
         AllowOverride All
     &lt;/Directory&gt;
 &lt;/VirtualHost&gt;</pre>
-                <li>I also added the virtual host entries for p2,p3,p4.</li>
-                <li>Now we can get to the project via a FQDN URL: <a href="http://p1.markmarinorocks.me/">http://p1.markmarinorocks.me/</a></li>
-            </ul>
+                <p class="cheatsheet">I also added the virtual host entries for p2,p3,p4.</p>
+                <p class="cheatsheet">Now we can get to the project via a FQDN URL: <a href="http://p1.markmarinorocks.me/">http://p1.markmarinorocks.me/</a></p>
+                <p class="cheatsheet">Party on, Wayne! Party on, Garth!</p>
         </div>
 	</div>
 
