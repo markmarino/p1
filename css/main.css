@@ -1,4 +1,4 @@
-h1, h2, h3 {
+h1.p1, h2.p1, h3.p1 {
 	text-align:center;
 }
 
@@ -17,4 +17,12 @@ img {
 
 p {
 	text-align:center;
+}
+
+.cheatsheet {
+    text-align:left;
+}
+
+h1.cheatsheet, h2.cheatsheet, h3.cheatsheet {
+    text-align:left;
 }

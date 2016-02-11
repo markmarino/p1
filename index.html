@@ -7,8 +7,11 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' type='text/css'>
-	<link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
 	<link href='css/main.css' rel='stylesheet'>
 
@@ -16,70 +19,79 @@
 <body>
 
 	<div class="container">
+        <div class="p1">
+    		<h1 class="p1">Mark Marino</h1>
 
-		<h1>Mark Marino</h1>
+    		<img src='images/IMG_2869_Small.jpg' alt='Mark Marino photo'>
 
-		<img src='images/IMG_2869_Small.jpg' alt='Mark Marino photo'>
+    		<h3 class="p1">Project 2 Title</h3>
+    		<p class="p1">View: [link]</p>
+    		<p class="p1">Github: [link]</p>
 
-		<h3>Project 2 Title</h3>
-		<p>View: [link]</p>
-		<p>Github: [link]</p>
+    		<h3 class="p1">Project 3 Title</h3>
+    		<p class="p1">View: [link]</p>
+    		<p class="p1">Github: [link]</p>
 
-		<h3>Project 3 Title</h3>
-		<p>View: [link]</p>
-		<p>Github: [link]</p>
-
-		<h3>Project 4 Title</h3>
-		<p>View: [link]</p>
-		<p>Github: [link]</p>
-
-        <h2>My Cheat Sheet for Getting P1 Ready</h2>
-        <ul>
-
-            <li>Create a new remote repository on Github.com</li>
-            <li>See instructions here:</li>
-            <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/05_Setup_a_repository.md" class="btn btn-info" role="button">https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/05_Setup_a_repository.md</a>
-            <li>Github URL for new repository: <code>git@github.com:markmarino/p1.git</code></li>
-            <li>Initialize local repo:</li>
-            <li>In cmder:
-                <ul>
-                    <li>$ <kbd>cd E:\MAMP\htdocs\p1</kbd></li>
-                    <li>$ <kbd>git init</kbd></li>
-                    <li>$ <kbd>git remote -v</kbd></li>
-                </ul>
-            <li>Connect local repo to Github repo:</li>
-            <li>Use this command line in cmder: $git remote add origin git@github.com:markmarino/p1.git</li>
-            <li>Push up the first commit</li>
-            <li>See instructions here: https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/06_Tracking_changes.md</li>
-            <li>First, check status. In cmder: $ git status</li>
-            <li>Now add the files to the repo. In cmder: $ git add --all
-            <li>Now commit the untracked file(s)</li>
-            <li>In cmder: $ git commit -m "Initial project commit."</li>
-            <li>Finally, push the files to github. In cmder: $ git push origin master</li>
-            <li>Now, if you're not logged into Digital Ocean already, fire up another cmder window and ssh into it: $ ssh root@192.241.176.184</li>
-            <li>See instructions here: https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/07_Deploy_to_Digital_Ocean.md</li>
-            <li>Go to the Droplet root: # cd /var/www/html</li>
-            <li>Clone the P1 repository. In cmder: # git clone git@github.com:markmarino/p1.git</li>
-            <li>Now you can view the website at this URL: http://192.241.176.184/p1/</li>
-            <li>Wash, Rinse, Repeat</li>
-            <li>Now to make further updates, do these steps on the local server to update the files on github:</li>
+    		<h3 class="p1">Project 4 Title</h3>
+    		<p class="p1">View: [link]</p>
+    		<p class="p1">Github: [link]</p>
+        </div>
+        <div class="cheatsheet">
+            <h2 class="cheatsheet">My Cheat Sheet for Getting P1 Ready</h2>
             <ul>
-                <li>$ git add --all</li>
-                <li>$ git commit -m "Initial project commit."</li>
-                <li>$ git push origin master</li>
-            </ul>
-            <li>And then in the Droplet cmder window, pull the files:</li>
-            <li># git pull origin master</li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
 
+                <h3 class="cheatsheet">Create a new remote repository on Github.com</h3>
+                <li>See instructions here:</li>
+                <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/05_Setup_a_repository.md" class="btn btn-info" role="button">https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/05_Setup_a_repository.md</a>
+                <li>Github URL for new repository: <code>git@github.com:markmarino/p1.git</code></li>
+                <li>Initialize local repo:</li>
+                <li>In cmder:
+                    <ul>
+                        <li>$ <kbd>cd E:\MAMP\htdocs\p1</kbd></li>
+                        <li>$ <kbd>git init</kbd></li>
+                        <li>$ <kbd>git remote -v</kbd></li>
+                    </ul>
+                </li>
+                <li>Connect local repo to Github repo:</li>
+                <li>Use this command line in cmder: $ <kbd>git remote add origin git@github.com:markmarino/p1.git</kbd></li>
+                <h3 class="cheatsheet">Push up the first commit</h3>
+                <li>See instructions here:</li>
+                <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/06_Tracking_changes.md" class="btn btn-info" role="button">https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/06_Tracking_changes.md</a>
+                <li>First, check status. In cmder: $ <kbd>git status</kbd></li>
+                <li>Now add the files to the repo. In cmder: $ <kbd>git add --all</kbd>
+                <li>Now commit the untracked file(s)</li>
+                <li>In cmder: $ <kbd>git commit -m "Initial project commit."</kbd></li>
+                <li>Finally, push the files to github. In cmder: $ <kbd>git push origin master</kbd></li>
+                <h3 class="cheatsheet">Now clone repo on Digital Ocean Droplet</h3>
+                <li>If you're not logged into Digital Ocean already, fire up another cmder window and ssh into it: $ <kbd>ssh root@192.241.176.184</kbd></li>
+                <li>See instructions here:</li>
+                <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/07_Deploy_to_Digital_Ocean.md" class="btn btn-info" role="button">https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/07_Deploy_to_Digital_Ocean.md</a>
+                <li>Go to the Droplet root: # <kbd>cd /var/www/html</kbd></li>
+                <li>Clone the P1 repository. In cmder: # <kbd>git clone git@github.com:markmarino/p1.git</kbd></li>
+                <h3 class="cheatsheet">View the live website on Droplet</h3>
+                <li>You can view the website at this URL: <a href="http://192.241.176.184/p1/">http://192.241.176.184/p1/</a></li>
+                <h3 class="cheatsheet">Wash, Rinse, Repeat</h3>
+                <li>Now to make further updates, do these steps on the local server to update the files on github:</li>
+                <ul>
+                    <li>$ <kbd>git add --all</kbd></li>
+                    <li>$ <kbd>git commit -m "Add comment here."</kbd></li>
+                    <li>$ <kbd>git push origin master</kbd></li>
+                </ul>
+                <li>And then in the Droplet cmder window, pull the files:</li>
+                <li># <kbd>git pull origin master</kbd></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
 	</div>
 
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </body>
 </html>
