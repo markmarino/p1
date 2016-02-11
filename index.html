@@ -33,7 +33,7 @@
 		<p>View: [link]</p>
 		<p>Github: [link]</p>
 
-        <h2>Cheat Sheet for P1</h2>
+        <h2>My Cheat Sheet for Getting P1 Ready</h2>
         <ul>
 
             <li>Create a new remote repository on Github.com</li>
@@ -47,7 +47,33 @@
                     <li>$ git remote -v</li>
                 </ul>
             <li>Connect local repo to Github repo:</li>
-            <li>Use this command line in cmder: $git remote add origin git@github.com:markmarino/p1.git
+            <li>Use this command line in cmder: $git remote add origin git@github.com:markmarino/p1.git</li>
+            <li>Push up the first commit</li>
+            <li>See instructions here: https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/06_Tracking_changes.md</li>
+            <li>First, check status. In cmder: $ git status</li>
+            <li>Now add the files to the repo. In cmder: $ git add --all
+            <li>Now commit the untracked file(s)</li>
+            <li>In cmder: $ git commit -m "Initial project commit."</li>
+            <li>Finally, push the files to github. In cmder: $ git push origin master</li>
+            <li>Now, if you're not logged into Digital Ocean already, fire up another cmder window and ssh into it: $ ssh root@192.241.176.184</li>
+            <li>See instructions here: https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/07_Deploy_to_Digital_Ocean.md</li>
+            <li>Go to the Droplet root: # cd /var/www/html</li>
+            <li>Clone the P1 repository. In cmder: # git clone git@github.com:markmarino/p1.git</li>
+            <li>Now you can view the website at this URL: http://192.241.176.184/p1/</li>
+            <li>Wash, Rinse, Repeat</li>
+            <li>Now to make further updates, do these steps on the local server to update the files on github:</li>
+            <ul>
+                <li>$ git add --all</li>
+                <li>$ git commit -m "Initial project commit."</li>
+                <li>$ git push origin master</li>
+            </ul>
+            <li>And then in the Droplet cmder window, pull the files:</li>
+            <li># git pull origin master</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
 
 	</div>
