@@ -62,10 +62,10 @@
                 <li>Now commit the untracked file(s)</li>
                 <li>In cmder: $ <kbd>git commit -m "Initial project commit."</kbd></li>
                 <li>Finally, push the files to github. In cmder: $ <kbd>git push origin master</kbd></li>
-                <h3 class="cheatsheet">Now clone repo on Digital Ocean Droplet</h3>
-                <li>If you're not logged into Digital Ocean already, fire up another cmder window and ssh into it: $ <kbd>ssh root@192.241.176.184</kbd></li>
+                <h3 class="cheatsheet">Clone repo on Digital Ocean Droplet</h3>
                 <li>See instructions here:</li>
                 <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/07_Deploy_to_Digital_Ocean.md" class="btn btn-info" role="button">https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/07_Deploy_to_Digital_Ocean.md</a>
+                <li>If you're not logged into Digital Ocean already, fire up another cmder window and ssh into it: $ <kbd>ssh root@192.241.176.184</kbd></li>
                 <li>Go to the Droplet root: # <kbd>cd /var/www/html</kbd></li>
                 <li>Clone the P1 repository. In cmder: # <kbd>git clone git@github.com:markmarino/p1.git</kbd></li>
                 <h3 class="cheatsheet">View the live website on Droplet</h3>
@@ -79,11 +79,23 @@
                 </ul>
                 <li>And then in the Droplet cmder window, pull the files:</li>
                 <li># <kbd>git pull origin master</kbd></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <h3 class="cheatsheet">Setup the FQDNs for the Projects</h3>
+                <li>See instructions here:</li>
+                <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/08_Live_domain_setup.md" class="btn btn-info" role="button">https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/08_Live_domain_setup.md</a>
+                <li>First, On Namecheap, I added DNS <code>A record</code> for <code>p1.markmarinorocks.me</code></li>
+                <li>I also added A records for p2,p3,p4</li>
+                <li>Now add the Virtual Host on my droplet so we can access the project by the FQDN <code>p1.markmarinorocks.me</code></li>
+                <li>In order to do that, I added the following code to the <code>/etc/apache2/sites-enabled/000-default.conf</code> file.</li>
+                <pre>
+&lt;VirtualHost *:80&gt;
+    ServerName p1.markmarinorocks.me
+    DocumentRoot "/var/www/html/p1"
+    &lt;Directory "/var/www/html/p1"&gt;
+        AllowOverride All
+    &lt;/Directory&gt;
+&lt;/VirtualHost&gt;</pre>
+                <li>I also added the virtual host entries for p2,p3,p4.</li>
+                <li>Now we can get to the project via a FQDN URL: <a href="http://p1.markmarinorocks.me/">http://p1.markmarinorocks.me/</a></li>
             </ul>
         </div>
 	</div>
