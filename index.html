@@ -36,13 +36,14 @@
     		<p class="p1">View: [link]</p>
     		<p class="p1">Github: [link]</p>
         </div>
-        <div class="cheatsheet">
+        <br>
+        <div class="cheatsheet well well-lg">
             <h2 class="cheatsheet">My Cheat Sheet for Getting P1 Ready</h2>
             <ul>
 
                 <h3 class="cheatsheet">Create a new remote repository on Github.com</h3>
                 <li>See instructions here:</li>
-                <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/05_Setup_a_repository.md" class="btn btn-info" role="button">https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/05_Setup_a_repository.md</a>
+                <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/05_Setup_a_repository.md" class="btn btn-info" role="button">05_Setup_a_repository.md</a>
                 <li>Github URL for new repository: <code>git@github.com:markmarino/p1.git</code></li>
                 <li>Initialize local repo:</li>
                 <li>In cmder:
@@ -56,7 +57,7 @@
                 <li>Use this command line in cmder: $ <kbd>git remote add origin git@github.com:markmarino/p1.git</kbd></li>
                 <h3 class="cheatsheet">Push up the first commit</h3>
                 <li>See instructions here:</li>
-                <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/06_Tracking_changes.md" class="btn btn-info" role="button">https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/06_Tracking_changes.md</a>
+                <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/06_Tracking_changes.md" class="btn btn-info" role="button">06_Tracking_changes.md</a>
                 <li>First, check status. In cmder: $ <kbd>git status</kbd></li>
                 <li>Now add the files to the repo. In cmder: $ <kbd>git add --all</kbd>
                 <li>Now commit the untracked file(s)</li>
@@ -64,7 +65,7 @@
                 <li>Finally, push the files to github. In cmder: $ <kbd>git push origin master</kbd></li>
                 <h3 class="cheatsheet">Clone repo on Digital Ocean Droplet</h3>
                 <li>See instructions here:</li>
-                <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/07_Deploy_to_Digital_Ocean.md" class="btn btn-info" role="button">https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/07_Deploy_to_Digital_Ocean.md</a>
+                <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/07_Deploy_to_Digital_Ocean.md" class="btn btn-info" role="button">07_Deploy_to_Digital_Ocean.md</a>
                 <li>If you're not logged into Digital Ocean already, fire up another cmder window and ssh into it: $ <kbd>ssh root@192.241.176.184</kbd></li>
                 <li>Go to the Droplet root: # <kbd>cd /var/www/html</kbd></li>
                 <li>Clone the P1 repository. In cmder: # <kbd>git clone git@github.com:markmarino/p1.git</kbd></li>
@@ -81,7 +82,7 @@
                 <li># <kbd>git pull origin master</kbd></li>
                 <h3 class="cheatsheet">Setup the FQDNs for the Projects</h3>
                 <li>See instructions here:</li>
-                <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/08_Live_domain_setup.md" class="btn btn-info" role="button">https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/08_Live_domain_setup.md</a>
+                <a href="https://github.com/susanBuck/dwa15-spring2016-notes/blob/master/01_Servers_and_Git/08_Live_domain_setup.md" class="btn btn-info" role="button">08_Live_domain_setup.md</a>
                 <li>First, On Namecheap, I added DNS <code>A record</code> for <code>p1.markmarinorocks.me</code></li>
                 <li>I also added A records for p2,p3,p4</li>
                 <li>Now add the Virtual Host on my droplet so we can access the project by the FQDN <code>p1.markmarinorocks.me</code></li>
